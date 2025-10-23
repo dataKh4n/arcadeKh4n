@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>arcadeKh4n — Game Hub</title>
+  <link rel="stylesheet" href="web/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>arcadeKh4n — Game Hub</h1>
+    <input id="search" placeholder="Search games (name, tag, description)..." />
+  </header>
+  <main id="app" class="container">
+    <section id="controls" class="controls">
+      <label>Filter:
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="python">Python scripts</option>
+          <option value="utility">Utilities</option>
+        </select>
+      </label>
+      <button id="refresh">Refresh</button>
+    </section>
+    <section id="list" class="game-list" aria-live="polite">
+      <!-- games rendered here -->
+    </section>
+  </main>
+  <footer class="footer">
+    <small>Drop these files into your repo root (or a `docs/` folder for GitHub Pages). Links point to files in the same repo.</small>
+  </footer>
+  <script>
+    async function loadGames(){
+      try{
+        const res = await fetch('web/games.json');
+        const games = await res.json();
+        return games;
+      }catch(e){
+        console.error('Failed to load games.json', e);
+        return [];
+      }
+    }
+    function formatSize(n){
+      if(n==null) return '';
+      if(n<1024) return n+' B';
+      if(n<1024*1024) return (n/1024).toFixed(1)+' KB';
+      return (n/1024/1024).toFixed(2)+' MB';
+    }
+    function render(games){
+      const list = document.getElementById('list');
+      const q = document.getElementById('search').value.toLowerCase().trim();
+      const filter = document.getElementById('filter').value;
+      list.innerHTML = '';
+      let shown = 0;
+      for(const g of games){
+        if(filter==='python' && g.type!=='python') continue;
+        if(filter==='utility' && g.type!=='utility') continue;
+        const hay = (g.name+' '+(g.tags||'')+' '+(g.desc||'')).toLowerCase();
+        if(q && hay.indexOf(q)===-1) continue;
+        shown++;
+        const card = document.createElement('article');
+        card.className = 'card';
+        const h = document.createElement('h2');
+        h.textContent = g.name;
+        const p = document.createElement('p');
+        p.textContent = g.desc || '';
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        meta.textContent = (g.type?g.type.toUpperCase()+' • ':'') + (g.size?formatSize(g.size):'') + (g.extra?(' • '+g.extra):'');
+        const links = document.createElement('div');
+        links.className = 'links';
+        const rawLink = document.createElement('a');
+        rawLink.href = g.path;
+        rawLink.textContent = 'View / Download';
+        rawLink.rel = 'noopener';
+        links.appendChild(rawLink);
+        const run = document.createElement('div');
+        run.className = 'run';
+        run.innerHTML = '<strong>Run:</strong> <code>python '+g.path.replace('.py','')+'.py</code> (locally)';
+        card.appendChild(h);
+        card.appendChild(p);
+        card.appendChild(meta);
+        card.appendChild(links);
+        card.appendChild(run);
+        list.appendChild(card);
+      }
+      if(shown===0){
+        list.innerHTML = '<p class="empty">No games found. Try a different search or add entries to web/games.json</p>';
+      }
+    }
+    document.getElementById('search').addEventListener('input', async ()=>{
+      const games = await loadGames();
+      render(games);
+    });
+    document.getElementById('filter').addEventListener('change', async ()=>{
+      const games = await loadGames();
+      render(games);
+    });
+    document.getElementById('refresh').addEventListener('click', async ()=>{
+      const games = await loadGames();
+      render(games);
+    });
+    (async ()=>{
+      const games = await loadGames();
+      render(games);
+    })();
+  </script>
+</body>
+</html>
