@@ -1,0 +1,74 @@
+[
+  {
+    "name": "100_in_1_games",
+    "path": "100_in_1_games.py",
+    "type": "python",
+    "desc": "Menu-based bundle of many small puzzles and mini-games.",
+    "tags": "bundle,menu",
+    "size": null
+  },
+  {
+    "name": "1_guess_the_number",
+    "path": "1_guess_the_number.py",
+    "type": "python",
+    "desc": "Classic number guessing game with leaderboard integration.",
+    "tags": "guess,number",
+    "size": null
+  },
+  {
+    "name": "2_coin_toss",
+    "path": "2_coin_toss.py",
+    "type": "python",
+    "desc": "Simple coin toss simulator.",
+    "tags": "coin,random",
+    "size": null
+  },
+  {
+    "name": "3_rock_paper_scissors",
+    "path": "3_rock_paper_scissors.py",
+    "type": "python",
+    "desc": "Rock, Paper, Scissors against computer.",
+    "tags": "rps,game",
+    "size": null
+  },
+  {
+    "name": "4_Simple_quiz_game",
+    "path": "4_Simple_quiz_game.py",
+    "type": "python",
+    "desc": "Multiple-choice quiz game.",
+    "tags": "quiz,mcq",
+    "size": null
+  },
+  {
+    "name": "5_snake_game",
+    "path": "5_snake_game.py",
+    "type": "python",
+    "desc": "Snake game (pygame or simple terminal).",
+    "tags": "snake,pygame",
+    "size": null
+  },
+  {
+    "name": "6_dice_roller",
+    "path": "6_dice_roller.py",
+    "type": "python",
+    "desc": "Dice roller simulator.",
+    "tags": "dice,random",
+    "size": null
+  },
+  {
+    "name": "highscores",
+    "path": "highscores.py",
+    "type": "utility",
+    "desc": "SQLite-based highscores helper module.",
+    "tags": "db,sqlite",
+    "size": null
+  },
+  {
+    "name": "show_leaderboard",
+    "path": "show_leaderboard.py",
+    "type": "utility",
+    "desc": "CLI leaderboard viewer.",
+    "tags": "leaderboard,cli",
+    "size": null
+  }
+]
