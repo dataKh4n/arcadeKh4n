@@ -1,0 +1,3 @@
+Make sure pygame is installed:
+
+pip install pygame

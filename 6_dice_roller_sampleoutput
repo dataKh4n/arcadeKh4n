@@ -1,0 +1,13 @@
+python 6_dice_roller.py
+Press Enter to roll 🎲...4
+You rolled: 3
+Roll again? (y/n): y
+Press Enter to roll 🎲...2
+You rolled: 1
+Roll again? (y/n): y
+Press Enter to roll 🎲...6
+You rolled: 5
+Roll again? (y/n): y
+Press Enter to roll 🎲...1
+You rolled: 2
+Roll again? (y/n): n

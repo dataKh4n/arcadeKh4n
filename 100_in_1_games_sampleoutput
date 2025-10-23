@@ -1,0 +1,133 @@
+====================================
+  100-in-1 Puzzle & Brain Games
+====================================
+ 1. Number Guess (1-20)
+ 2. Number Guess (1-100)
+ 3. Number Guess (1-1000, limited tries)
+ 4. Math Quiz (add)
+ 5. Math Quiz (mixed)
+ 6. Unscramble Word
+ 7. Hangman
+ 8. Riddle
+ 9. Coin Toss
+10. Dice Roll
+11. Rock Paper Scissors
+12. Palindrome Check
+13. Anagram Check
+14. Simple Memory (3)
+15. Binary Challenge
+16. Hex Challenge
+17. Prime Test
+18. Factorization quiz
+19. GCD & LCM quiz
+20. Sequence Next
+21. Compare two numbers
+22. Tiny Logic Puzzle
+23. Word Chain
+24. Plural Quiz
+25. Countdown Recall
+26. Odd/Even Quiz
+27. Word Length
+28. Vowel Count
+29. Letter Guess
+30. Yes/No Logic
+31. Guess by Hint
+32. Pattern Count
+33. Word Contains Letter
+34. Two-sum Quiz
+35. Simple Cipher (Caesar)
+36. Count Substring
+37. Smallest/Largest
+38. Find Missing Number
+39. Word Stats (words count)
+40. Quick Multiplication
+41. Sum of Digits
+42. Vowels in Phrase
+43. Recall Names
+44. Two-player Tic Tac Toe
+45. Play vs Simple AI Tic Tac Toe
+46. Guess Binary Sequence
+47. Mini Mastermind
+48. Count Primes in Range
+49. Letter Position
+50. Sum Series
+51. Quick Mental Subtract
+52. Find Word with Letter
+53. Even/Odd Split
+54. Letters to Numbers
+55. Smallest Difference
+56. Find Longest Word
+57. Count Consonants
+58. Multiplication Table
+59. Guess Factorial
+60. Majority Element
+61. Find Pairs with Sum
+62. Binary Search Game
+63. Quick Logic Grid
+64. Guess the Color Word
+65. Digit Reverse
+66. ASCII Sum
+67. Trailing Zeros in n!
+68. Convert Minutes to H:M
+69. Simple Stats (mean)
+70. Compare Powers a^b vs b^a
+71. Find Sublist
+72. Guess Power of Two
+73. Mini Crossword Hint
+74. Simple Cryptarithm
+75. Name Anagram Prompt
+76. Fraction Compare
+77. Word Ladder Step
+78. Memory Pairs (mini)
+79. Guess By Length
+80. Random Trivia Prompt
+81. Find Next Prime
+82. Quick True/False
+83. Simple Speed Math (5 Qs)
+84. Count Pattern 2
+85. Quick Anagram Scramble
+86. Mini Word Stats
+87. Simple Cipher 2
+88. Even/Odd Count
+89. Tiny Brainteaser
+90. Sum of Two Randoms
+91. Guess the Letter Position
+92. Count Vowels 2
+93. Mini Memory 4
+94. Short Riddle 2
+95. Binary Challenge 2
+96. Hex Challenge 2
+97. Final Quick Quiz
+98. Bonus Mini Game 1
+99. Bonus Mini Game 2
+100. Bonus Mini Game 3
+  0. Play a random game
+ -1. Exit
+====================================
+Choose a game number: 1
+
+--- 1. Number Guess (1-20) ---
+
+Guess the number between 1 and 20!
+Your guess: 3
+Too low.
+Your guess: 34
+Too high.
+Your guess: 55
+Too high.
+Your guess: 19
+Too high.
+Your guess: 19
+Too high.
+Your guess: 15
+Too high.
+Your guess: 10
+Too low.
+Your guess: 12
+Too low.
+Your guess: 13
+Too low.
+Your guess: 14
+Correct! (10 tries)
+
+Press Enter to return to the menu...
