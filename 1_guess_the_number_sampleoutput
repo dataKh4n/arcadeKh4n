@@ -1,0 +1,16 @@
+python 1_guess_the_number.py
+
+I'm thinking of a number between 1 and 10.
+You have 5 attempts. Make them count!
+Enter your guess (1 - 10): 3
+Too low.
+Enter your guess (1 - 10): 6
+Too high.
+Enter your guess (1 - 10): 5
+Too high.
+Enter your guess (1 - 10): 4
+Correct! You guessed the number in 4 attempts.
+
+Score: 1 wins, 0 losses
+Play again? (y/n): n
+Thanks for playing — feel free to fork this on GitHub!
