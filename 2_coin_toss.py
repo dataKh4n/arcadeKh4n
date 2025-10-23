@@ -1,7 +1,9 @@
+# Placeholder: replace this file with your original game file from the repo.
+
 import random
 
-print("🪙 Coin Toss Game")
-choice = input("Heads or Tails? ").lower()
-result = random.choice(["heads", "tails"])
-print(f"It’s {result}! You {'win' if choice == result else 'lose'}!")
+def flip():
+    print('Coin toss - placeholder')
 
+if __name__ == '__main__':
+    flip()

@@ -1,17 +1,7 @@
-score = 0
+# Placeholder: replace this file with your original game file from the repo.
 
-questions = {
-    "What is the capital of France? ": "paris",
-    "What is 5 + 7? ": "12",
-    "What color are bananas? ": "yellow"
-}
+def quiz():
+    print('Quiz - placeholder')
 
-for q, a in questions.items():
-    ans = input(q).lower()
-    if ans == a:
-        print("✅ Correct!")
-        score += 1
-    else:
-        print("❌ Wrong!")
-print(f"Your score: {score}/{len(questions)}")
-
+if __name__ == '__main__':
+    quiz()
