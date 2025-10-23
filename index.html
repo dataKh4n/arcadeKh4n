@@ -74,7 +74,6 @@
         rawLink.textContent = 'View / Download';
         rawLink.rel = 'noopener';
         links.appendChild(rawLink);
-        // Run instructions (can't execute Python in browser)
         const run = document.createElement('div');
         run.className = 'run';
         run.innerHTML = '<strong>Run:</strong> <code>python '+g.path.replace('.py','')+'.py</code> (locally)';
@@ -101,7 +100,6 @@
       const games = await loadGames();
       render(games);
     });
-    // initial render
     (async ()=>{
       const games = await loadGames();
       render(games);
